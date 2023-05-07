@@ -51,6 +51,9 @@ nav ul li a{
     font-size:17px;
 }
 
+a{
+    color:#fff;
+}
 a:active,a:visited{
     color:#fff;
 }
