@@ -51,13 +51,12 @@ nav ul li a{
     font-size:17px;
 }
 
-a{
-    color:#fff;
-}
 a:active,a:visited{
     color:#fff;
 }
-
+footer a{
+    color:#fff;
+}
 nav #contact{
     border:2px solid grey;
     padding:10px 15px;
@@ -123,23 +122,22 @@ button{
     font-size:25px;
     color:black;
     text-align: center;
-    padding:10px;
     margin-top: 100px;
 }
 .trustb{
-    height: auto;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     background-color: lightgrey;
-    margin:0 10px 100px 10px;
-    padding:30px;
+    margin:10px 10px 100px 10px;
     border-radius: 10px;
+    gap:35px;
 }
 
 .trust img{
-    height: 50px;
+    object-fit: cover;
+    height: 40px;
     width:auto;
 }
 
@@ -166,10 +164,9 @@ button{
     flex-wrap: wrap;
 }
 
-#sec3 p{
+.tp-view p{
     text-align: justify;
     width:600px;
-    color:black;
     font-size: 30px;
     margin:20px 20px;
     padding:0 20px;
@@ -284,13 +281,13 @@ table h3{
     width: 350px;
     height: 600px;
     padding:30px;
-    border:4px solid rgb(125, 125, 125);
+    border:3.5px solid rgb(125, 125, 125);
     border-radius: 20px;
     font-size: 25px;
     color:rgb(125, 125, 125);
 }
 .flex-card:hover{
-    border:4px solid #8B5FBF;
+    border:3.5px solid #8B5FBF;
 }
 .flex-card span{
     color:#0C090D;
@@ -350,7 +347,7 @@ table h3{
 .l{
     background-color: #0C090D;
 }
-#last{
+.last{
     height: auto;
     display:flex;
     flex-direction: row;
@@ -362,24 +359,25 @@ table h3{
     gap:50px;
     border-radius: 20px;
 }
-#last .div-1{
+.last .div-1{
     width:50%;
     padding:20px 0;
 }
-#last h3{
+.last h3{
     font-size: 35px;
     font-weight: 300;
 }
-#last p{
+.last p{
     margin:20px 0;
     font-size: 20px;
     line-height: 30px;
 }
-#last .def{
+.last .def{
     background-color: #fff;
-    color: #8B5FBF;
     border:2px solid #fff;
 }
+
+
 /* FOOTER */
 
 footer{
@@ -426,13 +424,145 @@ footer{
 /* ------- scrollbar---- */
 
 ::-webkit-scrollbar{
-    width:10px;
+    width:9px;
+    height:9px;
     background-color: transparent;
 }
 ::-webkit-scrollbar-thumb{
-    background: #8B5FBF;
-    border-radius: 10px;
+    background: #380671;
+    border-radius: 9px;
 }
 ::-webkit-scrollbar-corner{
-    border-radius: 10px;
+    border-radius: 9px;
+}
+
+
+/* ------------ */
+.clr-p{color: #8B5FBF;}
+.clr-w{color:#fff;}
+.clr-b{color:#0C090D;}
+.bg-b{ background-color: #0C090D;}
+.bg-p{ background-color: #6f43a1;}
+.big-text{
+    font-size: 100px;
+}
+.subhead{
+    font-size: 2.5em;
+}
+.subtext{
+    font-size:1.5em;
+}
+#abs-1{
+    margin-top: 72px;
+    width:100%;
+    height:250px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#abs-2{
+    padding:20px 0 20px 0;
+}
+#abs-2 .flex{
+    margin-bottom: 50px;
+}
+.img{
+    display: grid;
+    justify-content: left;
+    align-items: center;
+}
+.img img:hover{
+    scale: 1.01;
+}
+.cont{
+    width:50%;
+    text-align: justify;
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    padding:30px;
+}
+#abt-4 h2,#abt-4 h3,#abt-4 img{
+    padding:0 35px 0 35px;
+}
+#abt-4 h2{
+    margin-left:-5px;
+}
+#abt-4{
+    padding-top: 30px;
+}
+#abt-4 img{
+    width:100%;
+    margin-bottom: 40px;
+}
+.ar-img img{
+    width: 225px;
+    height: 225px;
+    object-fit: contain;
+    background-color: #0C090D;
+}
+
+#abt-5 h2{
+    text-align: center;
+    margin-top: 50px;
+}
+#abt-5 div{
+    margin-bottom: 30px;
+}
+#abt-5 .third{
+    gap:185px;
+}
+#abt-5{
+    margin-bottom: 150px;
+}
+#abt-5 .fc{
+    margin-top: 50px;
+    gap:80px;
+}
+#abt-6{
+    width: 100%;
+    height:150px;
+}
+#abt-6 .last{
+    margin:auto 10px;
+    position: relative;
+    top:-100px;
+}
+
+/* ----- abs-3 */
+#abs-3{
+    padding:50px 0 50px 0;
+}
+#abs-3 .flex{
+    flex-direction: row;
+    justify-content:space-between;
+}
+.mdivs{
+    /* float: right; */
+    flex-direction: column;
+    width: fit-content;
+}
+.mdivs div{
+    width:40%;
+    padding:10px;
+    margin-left: 50px;
+}
+.mdivs h3{
+    font-size: 2em;
+    padding:10px 0 10px 0;
+}
+.mdivs p{
+    font-size: 1.5em;
+    padding:10px 0 10px 0;
+}
+.mdivs div img{
+    width:75%;
+    height:200px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.sticky{
+    text-align: center;
 }
